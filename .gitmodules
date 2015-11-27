@@ -1,0 +1,3 @@
+[submodule "Vendor/Aspects"]
+	path = Vendor/Aspects
+	url = https://github.com/steipete/Aspects.git

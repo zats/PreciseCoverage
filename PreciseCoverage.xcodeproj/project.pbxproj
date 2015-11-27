@@ -11,6 +11,7 @@
 		5C6869701C0791AE0087A134 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C68696F1C0791AE0087A134 /* Foundation.framework */; };
 		5C6869741C0791AE0087A134 /* PreciseCoverage.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 5C6869731C0791AE0087A134 /* PreciseCoverage.xcscheme */; };
 		5C6869771C0791AE0087A134 /* PreciseCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6869761C0791AE0087A134 /* PreciseCoverage.m */; };
+		5CA049831C07B3CC006E5A54 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA049821C07B3CC006E5A54 /* Aspects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		5C6869751C0791AE0087A134 /* PreciseCoverage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreciseCoverage.h; sourceTree = "<group>"; };
 		5C6869761C0791AE0087A134 /* PreciseCoverage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreciseCoverage.m; sourceTree = "<group>"; };
 		5C6869781C0791AE0087A134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA049811C07B3CC006E5A54 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		5CA049821C07B3CC006E5A54 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		5C6869711C0791AE0087A134 /* PreciseCoverage */ = {
 			isa = PBXGroup;
 			children = (
+				5CA049801C07B3C3006E5A54 /* Vendor */,
 				5C6869751C0791AE0087A134 /* PreciseCoverage.h */,
 				5C6869761C0791AE0087A134 /* PreciseCoverage.m */,
 				5C6869781C0791AE0087A134 /* Info.plist */,
@@ -79,6 +83,15 @@
 				5C6869731C0791AE0087A134 /* PreciseCoverage.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CA049801C07B3C3006E5A54 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5CA049811C07B3CC006E5A54 /* Aspects.h */,
+				5CA049821C07B3CC006E5A54 /* Aspects.m */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C6869771C0791AE0087A134 /* PreciseCoverage.m in Sources */,
+				5CA049831C07B3CC006E5A54 /* Aspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +291,7 @@
 				5C68697D1C0791AE0087A134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
