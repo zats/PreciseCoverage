@@ -1,5 +1,7 @@
 ![](https://github.com/zats/PreciseCoverage/raw/master/screenshot.png)
 
+Availbe through alcatraz, too
+
 # Feature
 
 * Show precise percentage
