@@ -1,8 +1,8 @@
 ![](https://github.com/zats/PreciseCoverage/raw/master/screenshot.png)
 
-Availbe through alcatraz, too
+Available through alcatraz, too
 
-# Feature
+# Features
 
 * Show precise percentage
 * Color coding:
