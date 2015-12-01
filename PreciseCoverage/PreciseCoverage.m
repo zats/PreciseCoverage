@@ -56,6 +56,7 @@ static PreciseCoverage *sharedPlugin;
             label.editable = NO;
             label.bezeled = NO;
             label.drawsBackground = NO;
+            label.tag = labelTag;
             label.selectable = NO;
             label.font = [NSFont systemFontOfSize:10];
             label.alignment = NSTextAlignmentCenter;
