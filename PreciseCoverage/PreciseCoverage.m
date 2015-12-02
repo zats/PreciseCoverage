@@ -89,13 +89,10 @@ static PreciseCoverage *sharedPlugin;
         
         frame.size.width *= progress / 100;
         NSBezierPath *track = [NSBezierPath bezierPathWithRoundedRect:frame xRadius:radius yRadius:radius];
-        if (progress == 100) {
-            [[NSColor colorWithDeviceRed:0.191 green:0.638 blue:0.261 alpha:1.000] setFill];
-        } else if (progress >= 50) {
-            [[NSColor colorWithDeviceRed:0.986 green:0.780 blue:0.000 alpha:1.000] setFill];
-        } else {
-            [[NSColor colorWithDeviceRed:0.675 green:0.157 blue:0.109 alpha:1.000] setFill];
-        }
+		const CGFloat minRed = 0.191, maxRed = 0.986, minGreen = 0.157, maxGreen = 0.780, blue = 0.109, alpha = 1.000;
+		CGFloat red = MIN((maxRed - minRed) * (100 - progress) / 50 + minRed, maxRed);
+		CGFloat green = MIN((maxGreen - minGreen) * progress / 50 + minGreen, maxGreen);
+		[[NSColor colorWithDeviceRed:red green:green blue:blue alpha:alpha] setFill];
         [track fill];
         NSLog(@"\n\n\nprogress %f\n\n\n", progress);
     } error:nil];
