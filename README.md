@@ -7,5 +7,5 @@ Available through alcatraz, too
 * Show precise percentage
 * Color coding:
 	* 100% - green;
-	* ≥50% - yellow;
-	* &lt;50% - red;
+	* ≥70% - yellow;
+	* &lt;70% - red;
